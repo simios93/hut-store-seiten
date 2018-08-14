@@ -1,0 +1,50 @@
+<div class="main-info grid">
+    <div class="col-8_md-7_sm-6_xs-12">
+        <div class="slider">
+            {% if page.url contains "aachen" %}
+                <img src="../assets/img/slider-aachen.png" alt="Hut.de Store Aachen">
+            {% elsif page.url contains "bonn" %}    
+                <img src="../assets/img/slider-bonn.png" alt="Hut.de Store Bonn">
+            {% elsif page.url contains "koeln" %}  
+                <img src="../assets/img/slider-koeln.png" alt="Hut.de Store Köln">
+            {% else %}
+                <img src="../assets/img/slider-muenster.png" alt="Hut.de Store Münster">
+            {% endif %}
+            <div class="image-title">Der Hut.de Store in {% include if/city.html %} - Schauen Sie vorbei!</div>
+        </div>
+    </div>
+    <div class="col-4_md-5_sm-6_xs-12">
+        <div class="card infos">
+            <div class="title center">Öffnungszeiten</div>
+            <div class="weekday">
+                <div class="day">
+                    {% if page.url contains "aachen" %} Montag - Samstag
+                    {% else %} Montag - Freitag {% endif %}
+                </div>
+                <div class="time">
+                    {% if page.url contains "aachen" %} 10:00 - 20:00 {% elsif page.url contains "bonn" %} 10:00 - 18:30 {% elsif page.url contains "koeln" %} 11:00 - 19:00 {% else %} 10:00 - 19:00 {%
+                    endif %}
+                </div>
+            </div>
+            <div class="weekend">
+                <div class="day">
+                    {% if page.url contains "aachen" %} {% else %} Samstag {% endif %}
+                </div>
+                <div class="time"> {% if page.url contains "aachen" %} {% else %} 10:00 - 18:00 {% endif %}</div>
+            </div>
+            <hr>
+            <div class="title address center">Adresse</div>
+            <div class="address-items">
+                <div>Hut.de, Store {% include if/city.html %}</div>
+                <div>
+                    {% if page.url contains "aachen" %} Adalbertstr. 100 {% elsif page.url contains "bonn" %} Dreieck 11 {% elsif page.url contains "koeln" %} Mittelstr. 34 {% else %} Salzstraße 60 {%
+                    endif %}
+                </div>
+                <div>
+                    {% if page.url contains "aachen" %} 52062 Aachen {% elsif page.url contains "bonn" %} 53111 Bonn {% elsif page.url contains "koeln" %} 50672 Köln {% else %} 48143 Münster {% endif
+                    %}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

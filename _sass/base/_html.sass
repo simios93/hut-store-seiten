@@ -1,0 +1,23 @@
+*
+    font-family: 'Muli', sans-serif
+    box-sizing: border-box
+    position: relative
+    outline: none        
+hr
+    margin: 10px 0 25px 0
+    +breakpoint(xs)
+        margin: 10px 0 15px 0
+.center
+    text-align: center    
+
+.grid [class*=col-]
+    padding: 5px 15px
+    +breakpoint(sm)
+        padding: 5px
+a
+    color: $grey
+    &:visited
+        color: $grey
+    &:hover
+        color: $green
+        text-decoration: none

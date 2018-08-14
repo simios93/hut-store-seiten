@@ -1,0 +1,21 @@
+<header class="site-header" role="banner">
+  <div class="wrapper">
+    {% if page.url contains "aachen" %}
+      <a href="/aachen"><img src="../assets/img/hut-store-aachen.svg" alt="Hut.de Store Aachen" class="logo"></a>
+    {% elsif page.url contains "bonn" %}
+      <a href="/bonn"><img src="../assets/img/hut-store-bonn.svg" alt="Hut.de Store Bonn" class="logo"></a>
+    {% elsif page.url contains "koeln" %}
+      <a href="/koeln"><img src="../assets/img/hut-store-koeln.svg" alt="Hut.de Store Köln" class="logo"></a>
+    {% else %}
+      <a href="/"><img src="../assets/img/hut-store-muenster.svg" alt="Hut.de Store Münster" class="logo"></a>
+    {% endif %}
+    <div class="icons">
+      <a href="https://www.facebook.com/HUT.de/" target="_blank">
+        <img src="../assets/img/facebook.svg" alt="Hut.de Store auf Facebook">
+      </a>
+      <a href="https://www.instagram.com/hut.de/" target="_blank">
+        <img src="../assets/img/instagram.svg" alt="Hut.de Store auf Instagram">
+      </a>
+    </div>
+  </div>
+</header>

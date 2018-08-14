@@ -1,0 +1,52 @@
+<div class="other-stores">
+    <div class="headline">
+        Durchstöbern Sie unsere verschiedenen Stores
+    </div>
+    <hr>
+    <div class="stores grid">
+        {% if page.url contains "aachen" %}
+        <div class="col-4_xs-12">
+            <img src="../assets/img/hut-store-bonn.svg" alt="Hut.de Store Bonn">
+        </div>
+        <div class="col-4_xs-12">
+            <img src="../assets/img/hut-store-koeln.svg" alt="Hut.de Store Köln">
+        </div>
+        <div class="col-4_xs-12">
+            <img src="../assets/img/hut-store-muenster.svg" alt="Hut.de Store Münster">
+        </div>
+        {% elsif page.url contains "bonn" %}
+        <div class="col-4_xs-12">
+                <img src="../assets/img/hut-store-aachen.svg" alt="Hut.de Store Aachen">
+            </div>
+            <div class="col-4_xs-12">
+                <img src="../assets/img/hut-store-koeln.svg" alt="Hut.de Store Köln">
+            </div>
+            <div class="col-4_xs-12">
+                <img src="../assets/img/hut-store-muenster.svg" alt="Hut.de Store Münster">
+            </div>
+        </div>
+        {% elsif page.url contains "koeln" %}
+        <div class="col-4_xs-12">
+                <img src="../assets/img/hut-store-aachen.svg" alt="Hut.de Store Aachen">
+            </div>
+            <div class="col-4_xs-12">
+                <img src="../assets/img/hut-store-bonn.svg" alt="Hut.de Store Bonn">
+            </div>
+            <div class="col-4_xs-12">
+                <img src="../assets/img/hut-store-muenster.svg" alt="Hut.de Store Münster">
+            </div>
+        </div>
+        {% else %}
+        <div class="col-4_xs-12">
+                <img src="../assets/img/hut-store-aachen.svg" alt="Hut.de Store Aachen">
+            </div>
+            <div class="col-4_xs-12">
+                <img src="../assets/img/hut-store-bonn.svg" alt="Hut.de Store Bonn">
+            </div>
+            <div class="col-4_xs-12">
+                <img src="../assets/img/hut-store-koeln.svg" alt="Hut.de Store Köln">
+            </div>
+        </div>
+        {% endif %}
+    </div>
+</div>

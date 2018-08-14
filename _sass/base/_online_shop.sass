@@ -1,0 +1,38 @@
+.online-shop
+    .services
+        .logo
+            border-bottom: 3px solid $green
+            border-top: 3px solid $green  
+            padding: 30px 50px
+            background: $light-grey
+            +breakpoint(sm)
+                padding: 15px 20px
+            +breakpoint(xs)
+                padding: 30px 70px    
+        .shipping,
+        .time,
+        .refund
+            display: flex
+            margin: 15px 0
+            flex: 1 0 50%
+            &:before
+                width: 50px
+                height: 50px
+                display: inline-block
+                content: ''
+                flex: 1 0 50%
+            .text
+                flex: 1 0 50%        
+        .shipping
+            &:before
+                //content: url('../icons/icon_pig.svg')  
+                background: url(../icons/icon_pig.svg) 50% 0 no-repeat  
+        .time
+            &:before
+                background: url(../icons/icon_fast-delivery.svg) 50% 0 no-repeat   
+                width: 60px
+        .refund
+            &:before
+                background: url(../icons/icon_exchange.svg) 50% 0 no-repeat 
+    .description
+        align-self: baseline
